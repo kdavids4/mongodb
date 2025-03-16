@@ -309,8 +309,7 @@ callOpMsg pipe request flagBit params = do
                         let (docs, docs') =
                               ( fromJust $ cast $ valueAt "nextBatch" doc :: [Document]
                               , fromJust $ cast $ valueAt "nextBatch" doc' :: [Document])
-                            id' = fromJust $ cast $ valueAt "id" doc' :: Int32
-                        (rt, check id' (rt, rep{ sections = docs' ++ docs })) -- todo: avoid (++)
+                        (rt, rep{sections= docs' ++ docs}) -- todo: avoid (++)
                         -- Since we use this to process moreToCome messages, we
                         -- know that there will be a nextBatch key in the document
                       _ ->  error "Impossible"
