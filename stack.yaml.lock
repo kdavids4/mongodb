@@ -3,7 +3,14 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    hackage: network-bsd-2.8.1.0@sha256:cc7867f81c6eb3f1924bbb1029757af6e3b67a3c224c1faa329be3ea70ad729c,3780
+    pantry-tree:
+      sha256: 57165d9e73b8ea1ffaf118fd5b54f15875e29eea6f40db29f53de9baa4d865d3
+      size: 264
+  original:
+    hackage: network-bsd-2.8.1.0
 snapshots:
 - completed:
     sha256: a81fb3877c4f9031e1325eb3935122e608d80715dc16b586eb11ddbff8671ecd
