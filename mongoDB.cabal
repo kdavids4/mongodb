@@ -60,6 +60,7 @@ Library
                     , fail
                     , dns
                     , http-types
+                    , network-bsd
 
   if flag(_old-network)
      -- "Network.BSD" is only available in network < 2.9
